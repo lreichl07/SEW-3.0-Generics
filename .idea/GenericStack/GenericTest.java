@@ -23,13 +23,13 @@ public class GenericTest {
             e.printStackTrace();
         }
         try{
-            JOptionPane.showMessageDialog(null,GenericStack.peek(stack).toString());
+            System.out.println(GenericStack.peek(stack).toString());
         } catch (StackEmptyException e) {
             e.printStackTrace();
         }
-        JOptionPane.showMessageDialog(null,GenericStack.list(stack));
+        System.out.println(GenericStack.list(stack));
         try{
-            JOptionPane.showMessageDialog(null,GenericStack.pop(stack).toString());
+            System.out.println(GenericStack.pop(stack).toString());
         } catch (StackEmptyException e) {
             e.printStackTrace();
         }
